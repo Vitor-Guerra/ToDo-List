@@ -1,0 +1,67 @@
+.ToDoList{
+    margin-top: 5rem;
+}
+
+.Header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.Header > div:first-of-type strong {
+    color: var(--blue);
+    font-size: 0.875rem;
+}
+
+.Header > div:nth-of-type(2) strong {
+    color: var(--purple);
+    font-size: 0.875rem;
+}
+
+.Header > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.Header > div span {
+    background: var(--gray-400);
+    color: var(--gray-200);
+    padding: .125rem 0.5rem;
+    border-radius: 999px;
+    font-weight: bold;
+    font-size: 0.75rem;
+}
+
+.Main{
+    margin-top: 1.5rem;
+    border-top: 1px solid var(--gray-300);
+    border-radius: .5rem;
+}
+
+
+.Main > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 4rem 2rem;
+    gap: 1rem;
+}
+
+.Main > div  svg{
+    fill: var(--gray-400);
+}
+
+.EmptyList {
+    display: flex;
+    flex-direction: column;
+}
+
+.EmptyList span, 
+.EmptyList strong{
+    line-height: 1.4;
+    font-size: 1rem;
+    color: var(--gray-300);
+}
+

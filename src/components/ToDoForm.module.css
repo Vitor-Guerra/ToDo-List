@@ -1,0 +1,50 @@
+.ToDoForm{
+    margin-top: -2rem;
+    width: 100%;
+}
+
+.TaskForm{
+    display: flex;
+    flex-wrap: nowrap;
+    gap: .5rem;
+}
+
+.TaskForm input{
+    background: var(--gray-500);
+    border: 1.25px solid var(--gray-700);
+    border-radius: .5rem;
+    color: var(--gray-100);
+    font-size: 1rem;
+    line-height: 1.4;
+    padding: 1rem;
+    width: 100%;
+    
+}
+
+.TaskForm input:focus{
+    border: 1px solid var(--purple-dark);
+    box-shadow: none;
+}
+
+.TaskForm button{
+    background: var(--blue-dark);
+    border: 0;
+    border-radius: .5rem;
+    color: var(--gray-100);
+    font-size: 0.875rem;
+    line-height: 1.4;
+    padding: 1rem;
+
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+
+    transition: background .2s;
+}
+
+.TaskForm button:hover{
+    background: var(--blue);
+    cursor: pointer;
+}
+
+
