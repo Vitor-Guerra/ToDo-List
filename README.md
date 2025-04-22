@@ -1,54 +1,60 @@
-# React + TypeScript + Vite
+# 📝 Desafio 01 - ToDo List com ReactJS
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 🚀 Sobre o Projeto
 
-Currently, two official plugins are available:
+Este projeto foi desenvolvido como parte do **Desafio 01** da trilha de ReactJS do **Ignite** da Rocketseat. O objetivo principal é praticar os conceitos fundamentais do React, criando uma aplicação funcional de lista de tarefas (**to-do list**).
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+A aplicação permite:
 
-## Expanding the ESLint configuration
+- ✅ Adicionar uma nova tarefa  
+- 🔁 Marcar e desmarcar uma tarefa como concluída  
+- 🗑️ Remover uma tarefa da listagem  
+- 📊 Visualizar o progresso de conclusão das tarefas  
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## 🧠 Conceitos Aplicados
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Durante o desenvolvimento, foram reforçados conceitos como:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- **Estados e imutabilidade**
+- **Manipulação de listas com `map` e `filter`**
+- **Propriedades (props)**
+- **Componentização**
+- **Chaves no JSX**
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+---
+
+## 🛠️ Tecnologias e Ferramentas
+
+O projeto foi desenvolvido utilizando:
+
+- ⚛️ [ReactJS](https://reactjs.org/)  
+- ⚡ [Vite](https://vitejs.dev/)  
+- 🧑‍💻 [TypeScript](https://www.typescriptlang.org/)  
+- 🎨 Estilização com CSS Modules  
+- 📦 Gerenciamento de pacotes com [npm](https://www.npmjs.com/)  
+
+---
+
+## 🎨 Layout
+
+O layout do projeto foi fornecido via Figma pela Rocketseat e pode ser acessado [neste link](https://www.figma.com/file/0n0zDN7zbzhRbaEO74Xesx/ToDo-List/duplicate).
+
+---
+
+## ▶️ Como Rodar o Projeto
+
+```bash
+# Clone o repositório
+git clone https://github.com/Vitor-Guerra/ToDo-List.git
+
+# Acesse a pasta do projeto
+cd nome-do-projeto
+
+# Instale as dependências
+npm install
+
+# Inicie o servidor de desenvolvimento
+npm run dev
 ```
